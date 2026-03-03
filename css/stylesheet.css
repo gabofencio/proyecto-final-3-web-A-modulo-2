@@ -57,6 +57,12 @@ article {
     text-justify: distribute;
     text-align: center;
 }
+img{
+    -webkit-user-drag: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
 
 .pointer-div {
     color: rgb(4, 245, 4);
