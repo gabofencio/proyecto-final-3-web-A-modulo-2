@@ -11,8 +11,8 @@
 
 
 <body>
-<h1>Practicas - Modulo 2</h1>    
-<h2>Practica 1 - modulo 2 </h2>
+    <h1>Practicas - Modulo 2</h1>
+    <h2>Practica 1 - modulo 2 </h2>
     <header id="landingSpot">
         <h3>Esto es un header</h3>
         <p id="headerbg">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur mollitia dolor
@@ -98,7 +98,7 @@
         <div class="photocard" id="gon">
             <h3>Gon Freecs</h3>
             <div class="framed-picture dynamic-image">
-                <img src="assets/IMG/gon.png" alt="foto de perfil de gon" id="pGon">
+                <img src="assets/IMG/gon.png" alt="foto de perfil de gon" id="pGon" class="photoShape">
             </div>
             <p>Gon es el personaje principal de la saga de Hunter X Hunter, es tontito y busca a su padre.</p>
             <button onclick="this.parentElement.querySelector('.design').classList.toggle('hidden-div')"
@@ -108,6 +108,7 @@
             <div class="design hidden-div">
                 <h4>Diseño del personaje:</h4>
                 <img id="img" src="assets/IMG/gonDesign.jpg" alt="Distintos angulos del diseño de Gon">
+                <h5>Información relevante:</h5>
                 <p>Gon es un joven con pelo negro de puntas verdes y grandes ojos castaños. Su atuendo habitual se
                     compone de una chaqueta verde con bordes rojizos que cubren una camiseta sin mangas de color negro o
                     blanco, pantalones cortos verdes y botas de cordones verdes.</p>
@@ -116,7 +117,7 @@
         <div class="photocard" id="killua">
             <h3>Killua Zoldyck</h3>
             <div class="framed-picture dynamic-image">
-                <img src="assets/IMG/killua.png" alt="foto de perfil de killua" id="pKillua">
+                <img src="assets/IMG/killua.png" alt="foto de perfil de killua" id="pKillua" class="photoShape">
             </div>
             <p>Killua no tiene amigos y está enamorado del gon, regalenle un psicologo porfavor.</p>
             <button onclick="this.parentElement.querySelector('.design').classList.toggle('hidden-div')"
@@ -126,7 +127,7 @@
             <div class="design hidden-div">
                 <h4>Diseño del personaje:</h4>
                 <img id="img" src="assets/IMG/killuaDesign.jpg" alt="Distintos angulos del diseño de Killua">
-                <p>
+                <h5>Información relevante:</h5>
                 <p>Killua tiene el cabello puntiagudo, blanco; y ojos azules. Sus ojos cambian dependiendo del estado de
                     ánimo en el que está, el estrechamiento y la nitidez cuando entra en modo de asesino. </p>
                 </p>
@@ -135,7 +136,7 @@
         <div class="photocard" id="kurapika">
             <h3>Kurapika Kurta</h3>
             <div class="framed-picture dynamic-image">
-                <img src="assets/IMG/kurapika.png" alt="foto de perfil de kurapika" id="pKura">
+                <img src="assets/IMG/kurapika.png" alt="foto de perfil de kurapika" id="pKura" class="photoShape">
             </div>
             <p>Kurapika se está ahogando en un vacío indescriptible. </p>
             <br>
@@ -143,13 +144,34 @@
                 class="buttonShowcase">
                 Detalles:
             </button><br>
-            <div class="design hidden-div">
+            <div class="design hidden-div" id="">
                 <h4>Diseño del personaje:</h4>
                 <img id="img" src="assets/IMG/kurapikaDesign.jpg" alt="Distintos angulos del diseño de Kurapika">
                 <h5>Información relevante:</h5>
                 <p>A simple vista, Kurapika tiene una apariencia algo andrógina, y su construcción física es bastante
                     pequeña, por lo que sus rasgos son bastante sutiles y juveniles. Tiene el cabello rubio con ojos
                     marrones; azul de la serie de 1999, y grises en la versión 2011. </p>
+            </div>
+        </div>
+
+        <div class="photocard" id="leorio">
+            <h3>Leorio Paradinight</h3>
+            <div class="framed-picture dynamic-image">
+                <img src="assets/IMG/leorio.png" alt="foto de perfil de Leorio" id="pLeorio" class="photoShape">
+            </div>
+            <p>Leorio quiere chambear en las farmacias similares. </p>
+            <br>
+            <button onclick="this.parentElement.querySelector('.design').classList.toggle('hidden-div')"
+                class="buttonShowcase">
+                Detalles:
+            </button><br>
+            <div class="design hidden-div" id="">
+                <h4>Diseño del personaje:</h4>
+                <img id="img" src="assets/IMG/leorioDesign.jpg" alt="Distintos angulos del diseño de Leorio">
+                <h5>Información relevante:</h5>
+                <p>Leorio es un hombre alto, de aspecto mayor, tiene ojos marrones, pelo negro, y un
+                    corte de pelo de pinchos. Él por lo general lleva un traje de negocios azul oscuro, zapatos negros,
+                    y un par de gafas de sol teashade. </p>
             </div>
         </div>
     </section>
