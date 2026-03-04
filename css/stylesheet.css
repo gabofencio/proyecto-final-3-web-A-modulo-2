@@ -384,6 +384,9 @@ iframe:hover {
     align-items: center;
     background-color: black;
     color: beige;
+    max-height: 500px;
+    
+     overflow-y: auto;
 }
 
 .container-flex-row {
@@ -392,6 +395,9 @@ iframe:hover {
     align-items: center;
     background-color: brown;
     color: beige;
+    margin:20px;
+    padding:10px;
+    max-height: 300px;
 }
 
 .container-flex-column {
@@ -400,12 +406,27 @@ iframe:hover {
     justify-content: space-around;
     background-color: slategrey;
     color: beige;
+    margin: 10px;
+    padding:1rem;
+    max-height:fit-content;
 }
 
 .inner-container {
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    align-items:center;
     margin:10px;
     background-color: #7e5e5c;
+    max-height: 200px;
+}
+#innerDouble{
+        margin:10px;
+}
+@media(max-width: 600px){
+    
+.father-container, .inner-container, .container-flex-column, .container-flex-row {
+        overflow-y: auto;
+        overflow-x: hidden;
+        scrollbar-width: none;
+}
 }
