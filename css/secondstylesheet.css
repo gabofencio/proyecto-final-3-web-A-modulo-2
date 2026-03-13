@@ -1,6 +1,13 @@
 header{
 width: 100%;
 }
+
+body{
+    background-image: url(https://w.wallhaven.cc/full/n6/wallhaven-n683ql.jpg);
+    position-anchor: fixed;
+    background-size:cover;
+}
+
 .navigation{
 display:flex;
 flex-direction: row;
@@ -68,9 +75,10 @@ margin:5px auto;
 background: rgb(252, 154, 9);
 transition: all 500ms ease-in-out;
 }
-
-body{
-    background-image: url(https://w.wallhaven.cc/full/n6/wallhaven-n683ql.jpg);
-    position-anchor: fixed;
-    background-size:cover;
+.goto{
+    width: clamp(3rem, 6vw, 5rem);
+    height: auto;
+    position: absolute;
+    bottom: 2%;
+    right: 2%;
 }
