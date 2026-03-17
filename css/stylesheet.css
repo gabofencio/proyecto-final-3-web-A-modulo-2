@@ -201,7 +201,9 @@ iframe:hover {
     text-align: center;
     box-shadow: 6px 6px 10px rgba(0, 0, 0, 0.658);
     display: inline-block;
-    max-width: 100%;
+    width: 280px;
+    min-height: 500px;
+    vertical-align: top;
     border-radius: 12px;
 }
 
@@ -231,8 +233,8 @@ iframe:hover {
 }
 
 .photocard img {
-    width: 70vw;
-    max-width: 100%;
+    width: 100%;
+    max-width: 200px;
 }
 
 .photocard img:hover {
@@ -386,24 +388,27 @@ iframe:hover {
     background-color: black;
     color: rgb(255, 255, 0);
     max-height: 500px;
-    
-     overflow-y: auto;
+
+    overflow-y: auto;
 }
-#important p{
+
+#important p {
     color: rgb(0, 255, 85) !important;
     background-color: antiquewhite !important;
 }
-#important img{
+
+#important img {
     scale: .1;
 }
+
 .container-flex-row {
     display: flex;
     flex-direction: row;
     align-items: center;
     background-color: brown;
     color: inherit;
-    margin:20px;
-    padding:10px;
+    margin: 20px;
+    padding: 10px;
     max-height: 300px;
 }
 
@@ -414,51 +419,57 @@ iframe:hover {
     background-color: slategrey;
     color: red;
     margin: 10px;
-    padding:1rem;
+    padding: 1rem;
 
- 
+
 }
 
 .inner-container {
     display: flex;
     flex-direction: row;
-    align-items:center;
-    margin:10px;
+    align-items: center;
+    margin: 10px;
     background-color: #7e5e5c;
     max-height: 200px;
-    color:initial;
+    color: initial;
 
 }
-#innerDouble{
-        margin:10px;
+
+#innerDouble {
+    margin: 10px;
 }
-@media(max-width: 600px){
-    
-.father-container, .inner-container, .container-flex-column, .container-flex-row {
+
+@media(max-width: 600px) {
+
+    .father-container,
+    .inner-container,
+    .container-flex-column,
+    .container-flex-row {
         overflow-y: auto;
         overflow-x: hidden;
         scrollbar-width: none;
-}
+    }
 }
 
 @keyframes bounce {
-            0%,
-            20%,
-            50%,
-            80%,
-            100% {
-                transform: translateY(0);
-            }
 
-            40% {
-                transform: translateY(-30px);
-            }
+    0%,
+    20%,
+    50%,
+    80%,
+    100% {
+        transform: translateY(0);
+    }
 
-            60% {
-                transform: translateY(-15px);
-            }
-        }
+    40% {
+        transform: translateY(-30px);
+    }
+
+    60% {
+        transform: translateY(-15px);
+    }
+}
 
 .bounceAnimation {
-            animation: bounce 2s infinite;
-        }
+    animation: bounce 2s infinite;
+}
