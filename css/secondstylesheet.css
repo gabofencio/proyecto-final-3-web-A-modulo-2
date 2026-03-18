@@ -1,10 +1,14 @@
+html{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
 header {
     width: 100%;
 }
 
 body {
     background-image: url(https://w.wallhaven.cc/full/n6/wallhaven-n683ql.jpg);
-    position-anchor: fixed;
     background-size: cover;
 }
 
@@ -13,20 +17,21 @@ body {
 *::after {
     box-sizing: border-box;
 }
-
+header{
+    position: sticky;
+    z-index: 1000;
+    top: 0;
+}
 .navigation {
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
     padding: 2rem;
-    height: 20px;
     width: 100%;
-    top: 0;
     background: transparent;
     backdrop-filter: blur(40px);
-    position: sticky;
-    z-index: 1000;
+
 }
 
 .container {
@@ -36,22 +41,29 @@ body {
     width: 100%;
     padding: 0 2rem;
 }
+.link-container{
+    display: flex;
+    justify-content: flex-end;
+      margin-left: auto;
+}
 
 .logo {
     font-size: 2rem;
     font-weight: bold;
     text-decoration: none;
     color: rgb(252, 154, 9);
-    ;
     cursor: pointer;
 }
 
 .container .navLinks {
     display: flex;
     flex-direction: row;
-    text-align: center;
+    justify-content: flex-end;
     gap: 1.2rem;
     list-style: none;
+  
+    
+
 }
 
 .container .navLinks li a {
@@ -113,7 +125,10 @@ img {
     user-select: none;
 }
 
-
+.header-div{
+    grid-column: 1 / -1;
+    text-align: center;
+}
 .justified-holder {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 280px));
