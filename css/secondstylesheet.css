@@ -1,7 +1,14 @@
+/* 
+color palette:
+    color: rgb(252, 154, 9);
+    background-color: rgb(49, 5, 0);
+*/
+
 html {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    scroll-behavior: smooth;
 }
 
 header {
@@ -25,6 +32,11 @@ header {
     top: 0;
 }
 
+a:visited {
+    color: inherit;
+}
+
+
 .navigation {
     display: flex;
     flex-direction: row;
@@ -32,7 +44,7 @@ header {
     align-items: center;
     padding: 2rem;
     width: 100%;
-    background: transparent;
+    background: rgba(10, 7, 1, 0.301);
     backdrop-filter: blur(40px);
 
 }
@@ -55,7 +67,7 @@ header {
     font-size: 2rem;
     font-weight: bold;
     text-decoration: none;
-    color: rgb(252, 154, 9);
+    color: rgb(252, 154, 9) !important;
     cursor: pointer;
 }
 
@@ -63,27 +75,26 @@ header {
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
-    gap: 1.2rem;
+    gap: 1.25rem;
     list-style: none;
 }
 
 .container .navLinks li a {
     color: rgb(252, 154, 9);
     text-decoration: none;
-    font-size: 1rem;
+    font-size: 1.25rem;
     font-weight: bold;
     padding: 3px 10px;
     border-radius: 10px;
     white-space: nowrap;
     border: 3px transparent;
     transition: all 500ms ease;
-
 }
 
 .container .navLinks li a:hover,
 .logo-toggle .spanBar:hover {
     background: transparent;
-    background-color: rgba(141, 103, 0, 0.425);
+    background-color: rgba(49, 5, 0, 0.596);
     border-radius: 30px;
     transition: all 500ms ease-in-out;
 }
@@ -105,18 +116,19 @@ header {
 }
 
 .goto {
-    width: clamp(3rem, 6vw, 5rem);
-    height: auto;
-    /* transform:scale(.75); */
+    width: clamp(2rem, 4vw, 5rem);
+    height: 40px;
+    width: 40px;
     position: fixed;
     bottom: 1%;
     right: 1%;
-    transition:all 500ms ease-in-out;
+    transition: all 500ms ease-in-out;
+
 }
-.goto:hover{
-  animation: bounce 3s infinite;
-   /* transform:scale(.75);   */
-  transition:all 500ms ease-in-out;
+
+.goto:hover {
+    animation: bounce 3s infinite;
+    transition: all 500ms ease-in-out;
 }
 
 @keyframes bounce {
@@ -141,11 +153,7 @@ header {
 
 
 /* migracion de photocards */
-/* * 
-debugger
-{
-    border: 2px solid red;
-} */
+
 
 img {
     -webkit-user-drag: none;
@@ -195,17 +203,17 @@ img {
     word-break: break-word;
 }
 
-
 .design {
     max-height: 400px;
     overflow-y: auto;
     scrollbar-width: none;
     opacity: 1;
-    transition: opacity 1000ms ease, max-height 700ms ease;
+    transition: all 1000ms ease-in-out;
     margin-bottom: 30px;
 }
 
-.design.hidden-div {
+.hidden-div {
+    display: flex;
     max-height: 0;
     opacity: 0;
 }
@@ -228,11 +236,11 @@ img {
 }
 
 .framed-picture {
-    transition: 1s ease-out;
+    transition: 1000ms ease-out;
 }
 
 .framed-picture:hover {
-    transition: 1s ease-out;
+    transition: 1000ms ease-out;
     max-width: .75;
 }
 
@@ -243,12 +251,12 @@ img {
 
 #pKura {
     background-color: rgb(250, 230, 5);
-    transition: 1s ease-out;
+    transition: 1000ms ease-out;
 }
 
 #pKura:hover {
     background-color: rgba(111, 96, 245, 0.664);
-    transition: 1s ease-out;
+    transition: 1000ms ease-out;
 }
 
 #kurapika .buttonShowcase {
@@ -266,12 +274,12 @@ img {
 
 #pGon {
     background-color: rgba(0, 43, 0, 0.904);
-    transition: 1s ease-out;
+    transition: 1000ms ease-out;
 }
 
 #pGon:hover {
     background-color: rgba(12, 136, 0, 0.849);
-    transition: 1s ease-out;
+    transition: 1000ms ease-out;
 }
 
 #gon .buttonShowcase {
@@ -287,12 +295,12 @@ img {
 
 #pKillua {
     background-color: rgba(14, 25, 31, 0.582);
-    transition: 1s ease-out;
+    transition: 1000ms ease-out;
 }
 
 #pKillua:hover {
     background-color: rgba(9, 206, 255, 0.822);
-    transition: 1s ease-out;
+    transition: 1000ms ease-out;
 }
 
 #killua .buttonShowcase {
@@ -308,13 +316,13 @@ img {
 
 #pLeorio {
     background-color: rgba(46, 120, 160, 0.582);
-    transition: 1s ease-out;
+    transition: 1000ms ease-out;
 
 }
 
 #pLeorio:hover {
     background-color: rgba(19, 66, 31, 0.822);
-    transition: 1s ease-out;
+    transition: 1000ms ease-out;
 }
 
 #leorio .buttonShowcase {
@@ -344,25 +352,40 @@ img {
     transform-origin: center;
 }
 
-/* Cookies & responsive adjustments */
+/* CookiesStart */
+.overlay {
+    position: fixed;
+    background: rgba(255, 124, 1, 0.171);
+    z-index: 1000;
+    inset: 0;
+
+}
+
+.overlay.active {
+    display: block;
+}
 
 .cookies {
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    background-color: rgba(170, 115, 12, 0.74);
-    color: rgb(255, 215, 104);
-    padding: 1rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    text-align: center;
+    position: fixed;
+    bottom: 25%;
+    left: 50%;
+    height: 450px;
+    width: 400px;
+    transform: translate(-50%, 0%);
+    background-color: rgba(105, 70, 5, 0.74);
+    color: rgb(252, 154, 9);
+    padding: 1rem;
+    z-index: 1000;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+    overflow: hidden;
 }
-.cookies a{
-    text-decoration: none;
-    color: orange;
-}
+
 .cookies-button-container {
     display: flex;
     flex-direction: row;
@@ -370,20 +393,334 @@ img {
     align-items: center;
 }
 
-.cookies-button-container button {
-    background-color: rgb(255, 124, 1);
-    color: rgb(255, 215, 104);
+.cookies-button {
+    background-color: rgb(252, 154, 9);
+    color: rgb(49, 5, 0);
+    margin: 0 1rem 0 1rem;
+    width: 100px;
+    height: 50px;
     border: none;
-    border-radius: 4px;
+    border-radius: 15px;
     cursor: pointer;
-    transition: transform 500ms ease-in-out;
-    margin:0 1rem 0 1rem;
-    width:100px;
-    height:50px;
+    transition: all 500ms ease-in-out;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
 }
 
-.cookies-button-container button:hover {
-    background-color: rgb(218, 105, 0);
+.cookies-button:hover {
+    color: rgb(252, 154, 9);
+    background-color: rgb(49, 5, 0);
     transform: scale(1.1);
+    box-shadow: 0 0 10px rgba(255, 217, 0, 0.5);
+}
+
+.cookies a {
+    text-decoration: none;
+    color: orange;
+    margin-top: 1rem;
+    transition: 300ms ease-in-out;
+}
+.cookies a:hover{
+    transform: scale(1.2);
+}
+
+#cookiesConfig {
+    position: relative;
+    overflow: hidden;
+    transition: all 500ms ease-in-out
+}
+
+.cookies-content {
+    display: flex;
+    max-height: 0;
+    overflow: hidden;
+    opacity: 0;
+    border: none;
+    border-radius: 15px;
+    transition: all 500ms ease-in-out;
+    background-color: rgba(99, 61, 5, 0.900);
+}
+
+.cookies-content:not(.collapsed) {
+    display: flex;
+    justify-content: space-between;
+    max-height: 700px;
+    opacity: 1;
+    border: 1px solid rgb(255, 153, 0);
+    margin: 0 0 1rem 0;
+    box-shadow: 0 0 10px rgba(252, 154, 9, 0.5);
+    padding: 0 5px 1rem 5px;
+}
+
+.toggle-cookies {
+    display: flex;
+    flex-direction: column;
+    margin-left: 1rem;
+    justify-content: flex-end;
+    text-align: center;
+    justify-content: center;
+}
+
+.switch {
+    display: inline-block;
+    width: 50px;
+    height: 25px;
+    background: rgb(49, 5, 0);
+    border-radius: 25px;
+    position: relative;
+    cursor: pointer;
     transition: all 500ms ease-in-out;
 }
+
+.switch input {
+    display: none;
+}
+
+.slider {
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    width: 20px;
+    height: 20px;
+    background: rgb(143, 87, 4);
+    border-radius: 50%;
+    transition: all 500ms ease-in-out;
+}
+
+/* activo */
+.switch input:checked+.slider {
+    left: 28px;
+    background: rgb(252, 154, 9);
+}
+
+/* cookiesend */
+
+
+/* footer */
+.footer-master {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background: transparent;
+    backdrop-filter: blur(10px);
+    color: rgb(252, 154, 9);
+}
+
+.copyright {
+    text-align: center;
+    margin-top: 1rem;
+}
+
+.footer-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.footer-container a {
+    text-decoration: none;
+}
+
+.footer-subcontainer {
+    display: flex;
+    flex-direction: column;
+    margin: 0 1rem 0 1rem;
+    justify-content: center;
+    align-items: center;
+}
+
+/* footer navigation */
+
+.footer-subcontainer .navLinks {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    gap: 1.5rem;
+    list-style: none;
+}
+
+.footer-subcontainer .navLinks li a {
+    color: rgb(252, 154, 9);
+    text-decoration: none;
+    font-size: 1.25rem;
+    font-weight: bold;
+    padding: 3px 10px;
+    border-radius: 10px;
+    white-space: nowrap;
+    transition: all 500ms ease;
+}
+
+.footer-subcontainer .navLinks li a:hover {
+    color: rgb(49, 5, 0);
+    background-color: rgb(252, 154, 9);
+    border: none;
+}
+
+.footer-subcontainer .navLinks li,
+.container .navLinks li, .cookies-button{
+    transform: rotate3d(0, 0, 0, 0);
+    transition: all 500ms ease;
+}
+
+.footer-subcontainer .navLinks li:hover,
+.container .navLinks li:hover, .cookies-button:hover{
+    transform: rotate3d(1, 0, 0, 360deg);
+}
+
+/* Input de newsletter*/
+
+.input-container {
+    position: relative;
+    width: 400px;
+}
+
+.input-container input{
+    width: 100%;
+    padding: 20px 50px 20px 25px;
+    border-radius: 50px;
+    border: 1px solid rgb(252, 154, 9);
+    color: rgb(252, 154, 9);
+    background: transparent;
+    backdrop-filter: blur(20px);
+}
+
+.input-container input:focus,
+.send-button:hover,
+.footer-subcontainer .navLinks li a:hover,
+.container .navLinks li a:hover {
+    outline: none;
+    box-shadow: 0 0 10px rgba(252, 154, 9, 0.5);
+
+}
+
+.send-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    right: 8px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: none;
+    background-color: rgb(252, 154, 9);
+    cursor: pointer;
+    transition: all 500ms ease-in-out;
+}
+
+.send-button:hover {
+    background-color: rgb(49, 5, 0);
+    transform: translateY(-50%) scale(1.1);
+    transition: all 500ms ease-in-out;
+}
+
+.send-button:hover img {
+    filter: brightness(1) contrast(1);
+}
+
+.send-button img {
+    width: 20px;
+    height: 20px;
+    transition: all 500ms ease-in-out;
+    filter: brightness(0.3) contrast(1.5);
+}
+
+.contact-container {
+    padding-bottom: 1rem;
+    border-bottom: 1px solid rgba(252, 155, 9, 0.125);
+}
+
+.footer-title {
+    font-weight: 500;
+    color: rgb(252, 154, 9);
+    font-size: 2rem;
+    width: 400px;
+}
+
+.bottom-text {
+    font-weight: 300;
+    color: rgba(252, 155, 9, 0.712);
+    font-size: 1.5rem;
+
+}
+
+.footer-data, #policy{
+    text-decoration: none;
+    background: linear-gradient(to right, rgb(255, 120, 0), rgb(252, 154, 9)),
+        linear-gradient(to right, #ff4d00, rgb(252, 154, 9), rgb(49, 5, 0));
+    background-size: 0% 0.15em, 0 0.15em;
+    background-position: 100% 100%, 0 100%;
+    background-repeat: no-repeat;
+    padding-bottom: 10px;
+    transition: all 1000ms ease-in-out;
+}
+
+.footer-data:hover,
+.footer-data:focus,#policy:hover,#policy:focus {
+    background-size: 100% 0.2em, 100% 0.2em;
+}
+
+.socials-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 1rem 0 1rem;
+    background: transparent;
+
+}
+
+.socials-button {
+    border-radius: 50% 50%;
+    width: 40px;
+    height: 40px;
+    margin: 0 1rem 0 1rem;
+    transition: all 1000ms ease-in-out;
+}
+
+.socials-button:hover{
+    transform: scale(1.2);
+    background-color: rgb(252, 154, 9);
+    box-shadow: 0 0 10px rgba(252, 154, 9, 0.5);
+}
+
+.socials-button:hover img{
+    filter: brightness(.2) contrast(1.5);
+}
+
+.socials-button img {
+    display: block;
+    width: inherit;
+    height: inherit;
+    filter: brightness(1) contrast(1.5);
+    transition: all 500ms ease-in-out;
+}
+
+.waxap-social {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 5px;
+}
+#waxap{
+    width: 40px;
+    height: 40px;
+      filter: brightness(1) contrast(1.5);
+    transition: all 500ms ease-in-out;
+}
+#waxap:hover, #waxap:focus{
+      filter: brightness(1.1) contrast(1.5);
+}
+
+.footer-master a {
+    text-decoration: none;
+}
+
+/* footerend */
+
+/* debugger */
+/* * {
+    border: 2px solid red;
+} */
