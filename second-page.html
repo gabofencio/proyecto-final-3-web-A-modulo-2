@@ -10,7 +10,7 @@
 </head>
 
 <body>
-    <header id="inicio">
+    <header>
         <!-- navbar -->
         <nav class="navigation">
             <div class="container">
@@ -20,13 +20,13 @@
                     <span class="spanBar"></span>
                     <span class="spanBar"></span>
                 </button>
-                <div class ="link-container">
-                <ul class="navLinks">
-                    <li><a href="index.html">Pagina principal</a></li>
-                    <li><a href="#2">Acerca de nosotros</a></li>
-                    <li><a href="#3">Servicios</a></li>
-                    <li><a href="#4">Contactanos</a></li>
-                </ul>
+                <div class="link-container">
+                    <ul class="navLinks">
+                        <li><a href="index.html">Pagina principal</a></li>
+                        <li><a href="#2">Acerca de nosotros</a></li>
+                        <li><a href="#3">Servicios</a></li>
+                        <li><a href="#4">Contactanos</a></li>
+                    </ul>
                 </div>
                 <span></span>
                 <span></span>
@@ -35,17 +35,18 @@
         </nav>
     </header>
 
-   
+    <div id="inicio"></div>
     <section class="justified-holder" id="photocards-container">
-    <div class="header-div">
-        <H2>PHOTOCARDS</H2>
-    </div>
+        <div class="header-div">
+            <H2>PHOTOCARDS</H2>
+        </div>
         <div class="photocard" id="gon">
             <h3>Gon Freecs</h3>
             <div class="framed-picture dynamic-image">
                 <img src="assets/IMG/gon.png" alt="foto de perfil de gon" id="pGon" class="photoShape">
-            </div> <div class ="text-container">
-            <p>Gon es el personaje principal de la saga de Hunter X Hunter, es tontito y busca a su padre.</p>
+            </div>
+            <div class="text-container">
+                <p>Gon es el personaje principal de la saga de Hunter X Hunter, es tontito y busca a su padre.</p>
             </div>
             <button onclick="this.parentElement.querySelector('.design').classList.toggle('hidden-div')"
                 class="buttonShowcase">
@@ -128,12 +129,13 @@
             </div>
         </div>
         <!-- photocards extras -->
-<div class="photocard" id="gon">
+        <div class="photocard" id="gon">
             <h3>Gon Freecs</h3>
             <div class="framed-picture dynamic-image">
                 <img src="assets/IMG/gon.png" alt="foto de perfil de gon" id="pGon" class="photoShape">
-            </div> <div class ="text-container">
-            <p>Gon es el personaje principal de la saga de Hunter X Hunter, es tontito y busca a su padre.</p>
+            </div>
+            <div class="text-container">
+                <p>Gon es el personaje principal de la saga de Hunter X Hunter, es tontito y busca a su padre.</p>
             </div>
             <button onclick="this.parentElement.querySelector('.design').classList.toggle('hidden-div')"
                 class="buttonShowcase">
@@ -219,8 +221,9 @@
             <h3>Gon Freecs</h3>
             <div class="framed-picture dynamic-image">
                 <img src="assets/IMG/gon.png" alt="foto de perfil de gon" id="pGon" class="photoShape">
-            </div> <div class ="text-container">
-            <p>Gon es el personaje principal de la saga de Hunter X Hunter, es tontito y busca a su padre.</p>
+            </div>
+            <div class="text-container">
+                <p>Gon es el personaje principal de la saga de Hunter X Hunter, es tontito y busca a su padre.</p>
             </div>
             <button onclick="this.parentElement.querySelector('.design').classList.toggle('hidden-div')"
                 class="buttonShowcase">
@@ -258,7 +261,20 @@
             </div>
         </div>
     </section>
+    <div class="cookies">
 
+        <p>Este sitio web utiliza cookies para mejorar tu experiencia de navegación, analizar el tráfico y personalizar
+            el contenido. Al continuar navegando, aceptas el uso de cookies conforme a nuestra Política de Cookies.
+            Puedes configurar tus preferencias o desactivarlas en cualquier momento desde la configuración de tu
+            navegador. <a href="#cookies-policy">Más
+                información</a>.</p>
+        <div class="cookies-button-container">
+            <button class="cookies-accept">Aceptar</button>
+            <button class="cookies-config">configurar cookies</button>
+            <button class="cookies-deny">Cancelar</button>
+        </div>
+
+    </div>
 
     <footer><a href="#inicio"> <img
                 src="https://static.vecteezy.com/system/resources/thumbnails/056/534/277/small/3d-up-arrow-button-icon-navigation-symbol-png.png"
