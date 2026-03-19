@@ -906,9 +906,11 @@ img {
     .cookies {
         background-color: rgba(105, 70, 5, 0.90);
         font-size: 1.1rem;
+        transform: translateX(-50%);
     }
 }
 
+/* Carrusel de cards */
 
 /* debugger */
 /* * {
