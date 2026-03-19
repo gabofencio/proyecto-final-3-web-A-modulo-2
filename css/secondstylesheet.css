@@ -17,7 +17,9 @@ header {
 
 body {
     background-image: url(https://w.wallhaven.cc/full/n6/wallhaven-n683ql.jpg);
-    background-size: cover;
+    background-size:cover;
+    background-repeat: no-repeat;
+
 }
 
 *,
@@ -59,7 +61,8 @@ a:visited {
 
 .link-container {
     display: flex;
-    justify-content: flex-end;
+    flex-direction: row;
+    justify-content: center;
     margin-left: auto;
 }
 
@@ -91,29 +94,55 @@ a:visited {
     transition: all 500ms ease;
 }
 
-.container .navLinks li a:hover,
-.logo-toggle .spanBar:hover {
+.container .navLinks li a:hover {
     background: transparent;
     background-color: rgba(49, 5, 0, 0.596);
     border-radius: 30px;
     transition: all 500ms ease-in-out;
 }
 
-.logo-toggle {
+.menu-toggle {
     background: transparent;
-    padding: 10px;
+    padding: 1rem;
     cursor: pointer;
     border: none;
+    display: none;
+    transition: transform 1000ms ease-in-out;
+    transform: rotate3d(0, 0, 0, 180deg);
+}
+
+.menu-toggle:hover {
+    transform: rotate3d(1, 0, 0, 180deg);
+}
+
+.menu-toggle:hover .spanBar {
+    background-color: rgb(49, 5, 0);
 }
 
 .spanBar {
     display: block;
-    width: 15px;
+    width: 2rem;
     height: 5px;
     margin: 5px auto;
     background: rgb(252, 154, 9);
     transition: all 500ms ease-in-out;
 }
+
+.hidden-checkbox {
+    display: none;
+}
+
+.menu-overlay-blur {
+    position: fixed;
+    inset: 0;
+    background: rgba(10, 7, 1, 0.301);
+    backdrop-filter: blur(20px);
+    opacity: 0;
+    pointer-events: none;
+    transition: all 300ms ease-in-out;
+    z-index: 900;
+}
+
 
 .goto {
     width: clamp(2rem, 4vw, 5rem);
@@ -169,13 +198,14 @@ img {
 
 .justified-holder {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 280px));
-    justify-content: center;
-    gap: 2rem;
-    background-color: rgba(245, 222, 179, 0.26);
+    grid-template-columns: repeat(auto-fit, minmax(280px, 280px));
+    gap: 1rem 8rem;
+    background: rgba(10, 7, 1, 0.301);
     text-align: center;
     color: rgb(255, 166, 0);
     padding: 3rem;
+    justify-content: space-between;
+
 }
 
 .photocard {
@@ -204,16 +234,16 @@ img {
 }
 
 .design {
-    max-height: 400px;
+    max-height: 500px;
     overflow-y: auto;
     scrollbar-width: none;
     opacity: 1;
     transition: all 1000ms ease-in-out;
-    margin-bottom: 30px;
+    margin-bottom: 1rem;
+
 }
 
 .hidden-div {
-    display: flex;
     max-height: 0;
     opacity: 0;
 }
@@ -229,10 +259,13 @@ img {
 }
 
 .photocard .buttonShowcase {
-    position: absolute;
-    bottom: 1px;
+    display: block;
+    position: relative;
+    bottom: .5rem;
     left: 50%;
     transform: translateX(-50%);
+    transform-origin: center;
+    transition: all 500ms ease-in-out;
 }
 
 .framed-picture {
@@ -328,6 +361,7 @@ img {
 #leorio .buttonShowcase {
     background-color: rgba(19, 66, 31, 0.822);
     border-color: rgba(46, 120, 160, 0.582);
+    color: rgb(78, 221, 209);
 }
 
 .photoShape {
@@ -335,20 +369,17 @@ img {
 }
 
 .buttonShowcase {
-    background-color: rgb(0, 0, 0);
-    border-color: rgb(83, 83, 83);
-    border-width: 7px;
-    color: rgb(255, 253, 253);
+    display: block;
+    border-width: 2px;
     text-align: center;
     border-radius: 1rem;
-    margin: 1rem 0 1rem 0;
+    margin: 1rem 0;
     transition: 500ms ease-out;
-
+    border-color: rgb(255, 0, 0);
 }
 
 .buttonShowcase:hover {
-    transform: translateX(-50%) scale(1.2);
-    transition: all 500ms ease-out;
+    transform: translateX(-50%) scale(1.1);
     transform-origin: center;
 }
 
@@ -358,8 +389,8 @@ img {
     background: rgba(255, 124, 1, 0.171);
     z-index: 1000;
     inset: 0;
-
 }
+
 
 .overlay.active {
     display: block;
@@ -419,7 +450,8 @@ img {
     margin-top: 1rem;
     transition: 300ms ease-in-out;
 }
-.cookies a:hover{
+
+.cookies a:hover {
     transform: scale(1.2);
 }
 
@@ -557,13 +589,15 @@ img {
 }
 
 .footer-subcontainer .navLinks li,
-.container .navLinks li, .cookies-button{
+.container .navLinks li,
+.cookies-button {
     transform: rotate3d(0, 0, 0, 0);
     transition: all 500ms ease;
 }
 
 .footer-subcontainer .navLinks li:hover,
-.container .navLinks li:hover, .cookies-button:hover{
+.container .navLinks li:hover,
+.cookies-button:hover {
     transform: rotate3d(1, 0, 0, 360deg);
 }
 
@@ -574,7 +608,7 @@ img {
     width: 400px;
 }
 
-.input-container input{
+.input-container input {
     width: 100%;
     padding: 20px 50px 20px 25px;
     border-radius: 50px;
@@ -646,7 +680,8 @@ img {
 
 }
 
-.footer-data, #policy{
+.footer-data,
+#policy {
     text-decoration: none;
     background: linear-gradient(to right, rgb(255, 120, 0), rgb(252, 154, 9)),
         linear-gradient(to right, #ff4d00, rgb(252, 154, 9), rgb(49, 5, 0));
@@ -658,7 +693,9 @@ img {
 }
 
 .footer-data:hover,
-.footer-data:focus,#policy:hover,#policy:focus {
+.footer-data:focus,
+#policy:hover,
+#policy:focus {
     background-size: 100% 0.2em, 100% 0.2em;
 }
 
@@ -680,13 +717,13 @@ img {
     transition: all 1000ms ease-in-out;
 }
 
-.socials-button:hover{
+.socials-button:hover {
     transform: scale(1.2);
     background-color: rgb(252, 154, 9);
     box-shadow: 0 0 10px rgba(252, 154, 9, 0.5);
 }
 
-.socials-button:hover img{
+.socials-button:hover img {
     filter: brightness(.2) contrast(1.5);
 }
 
@@ -704,14 +741,17 @@ img {
     align-items: center;
     gap: 5px;
 }
-#waxap{
+
+#waxap {
     width: 40px;
     height: 40px;
-      filter: brightness(1) contrast(1.5);
+    filter: brightness(1) contrast(1.5);
     transition: all 500ms ease-in-out;
 }
-#waxap:hover, #waxap:focus{
-      filter: brightness(1.1) contrast(1.5);
+
+#waxap:hover,
+#waxap:focus {
+    filter: brightness(1.1) contrast(1.5);
 }
 
 .footer-master a {
@@ -719,6 +759,147 @@ img {
 }
 
 /* footerend */
+
+/* Responsivity */
+@media (max-width: 600px) {
+
+    /* Navbar Mobile */
+    .navigation {
+        position: relative;
+        z-index: 1000;
+        backdrop-filter: blur(20px);
+        background: rgba(10, 7, 1, 0.301);
+        box-shadow: -5px 0 10px -2px rgba(0, 0, 0, 0.3);
+    }
+
+    .link-container {
+        z-index: 1000;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        position: fixed;
+        top: 6.3rem;
+        right: 0;
+        height: 100vh;
+        width: 200px;
+        padding: 5rem 1.5rem;
+        gap: 1.5rem !important;
+        backdrop-filter: blur(20px);
+        background: rgba(10, 7, 1, 0.301);
+        transform: translateX(100%);
+        opacity: 0;
+        box-shadow: -5px 0 10px -2px rgba(0, 0, 0, 0.3);
+        transition: all 1500ms;
+
+    }
+
+    .link-container.show {
+        opacity: 1;
+        transform: translateX(0);
+    }
+
+    .container .navLinks {
+        flex-direction: column;
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+
+    .menu-toggle {
+        display: block;
+        position: fixed;
+        right: 1rem;
+    }
+
+    .blur-overlay {
+        position: fixed;
+        inset: 0;
+        background: rgba(31, 23, 11, 0.3);
+        backdrop-filter: blur(2px);
+        opacity: 0;
+        pointer-events: none;
+        transition: opacity 1000ms ease;
+        z-index: 913;
+    }
+
+    .blur-overlay.show {
+        opacity: 1;
+        pointer-events: auto;
+    }
+
+    /* content mobile */
+    .photocard {
+        height: 450px;
+    }
+
+    .card-button-container {
+        display: flex;
+        justify-content: center !important;
+        align-items: center;
+        width: 2rem;
+        height: 2rem;
+        width: auto;
+        margin-top: 1rem;
+
+    }
+
+    .card-button-container .buttonShowcase {
+        display: block;
+        position: relative;
+        bottom: 5px;
+        left: 0;
+        transform: translateX(0%);
+        z-index: 12;
+    }
+
+    .photocard .design {
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 4rem;
+        width: 100%;
+        height: 500px;
+        max-height: calc(100% - 4rem);
+        background-color: rgba(46, 45, 45, 0.375);
+        display: flex;
+        flex-direction: column;
+        overflow-y: auto;
+        max-height: 100%;
+        opacity: 0;
+        pointer-events: none;
+        transition: all 1000ms ease-in-out;
+        z-index: 10;
+    }
+
+
+    .photocard .design:not(.hidden-div) {
+        opacity: 1;
+        pointer-events: auto;
+        backdrop-filter: blur(15px);
+        max-height: calc(100% - 3rem);
+    }
+
+    /* footer mobile */
+
+    footer {
+        text-align: center !important;
+    }
+
+    .goto {
+        bottom: 1%;
+        left: 1%;
+    }
+
+    .footer-container {
+        flex-direction: column;
+    }
+
+    .footer-subcontainer {
+        border-bottom: 1px solid rgba(252, 155, 9, 0.125);
+        padding-bottom: 10px;
+    }
+}
+
 
 /* debugger */
 /* * {
