@@ -24,6 +24,7 @@ body {
 
 }
 
+
 *,
 *::before,
 *::after {
@@ -198,17 +199,6 @@ img {
     text-align: center;
 }
 
-.justified-holder {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 280px));
-    gap: 1rem 8rem;
-    background: rgba(10, 7, 1, 0.301);
-    text-align: center;
-    color: rgb(255, 166, 0);
-    padding: 3rem;
-    justify-content: space-between;
-
-}
 
 .photocard {
     display: flex;
@@ -216,8 +206,8 @@ img {
     justify-content: space-between;
     width: 280px;
     height: 600px;
-    margin: 1rem;
-    padding: 1rem;
+    margin: 0;
+    padding-left: 2rem;
     border: 2px solid #7e5e5c;
     position: relative;
     text-align: center;
@@ -424,6 +414,7 @@ img {
     flex-direction: row;
     justify-content: center;
     align-items: center;
+
 }
 
 .cookies-button {
@@ -766,6 +757,10 @@ img {
 @media (max-width: 600px) {
 
     /* Navbar Mobile */
+    .inner-container {
+        height: 500px !important;
+    }
+
 
     .navigation {
         position: relative;
@@ -777,7 +772,7 @@ img {
 
     .link-container {
         z-index: 1000;
-        display: flex;
+        display: none;
         flex-direction: column;
         align-items: flex-start;
         position: fixed;
@@ -801,6 +796,14 @@ img {
         transform: translateX(0);
     }
 
+    .carousel {
+    position: relative;
+    max-width: 100%;
+    overflow: hidden;
+    margin: 20px;
+    display: flex!important;
+    flex-direction: column;
+}
     .container .navLinks {
         flex-direction: column;
         position: absolute;
@@ -832,7 +835,7 @@ img {
 
     /* content mobile */
     .photocard {
-        height: 450px;
+        margin-top: 1rem !important;
     }
 
     .card-button-container {
@@ -874,12 +877,26 @@ img {
         z-index: 10;
     }
 
-
     .photocard .design:not(.hidden-div) {
         opacity: 1;
         pointer-events: auto;
         backdrop-filter: blur(15px);
         max-height: calc(100% - 3rem);
+    }
+
+
+    /* cartas con grid */
+    .justified-holder {
+        display: none!important;
+        margin: 1rem;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 280px));
+        justify-content: center;
+        gap: 2rem;
+        background-color: rgba(245, 222, 179, 0.26);
+        text-align: center;
+        color: rgb(255, 166, 0);
+        padding: 3rem;
     }
 
     /* footer mobile */
@@ -908,6 +925,106 @@ img {
         font-size: 1.1rem;
         transform: translateX(-50%);
     }
+}
+
+
+
+
+
+.carousel-track {
+    display: flex;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    scroll-snap-type: x mandatory;
+    scrollbar-width: none;
+}
+
+.row-carousel {
+    display: flex;
+    flex-direction: row;
+    padding: 2rem !important;
+}
+
+.carousel-track::-webkit-scrollbar {
+    display: none;
+}
+
+.carousel-slide {
+    min-width: 100%;
+    scroll-snap-align: center;
+    position: relative;
+}
+
+.carousel-slide .photocard {
+    margin-right: 2rem;
+}
+
+.nav-carousel {
+    position: absolute;
+    top: 50%;
+    transform: translateY(70%);
+    background-color: rgba(49, 5, 0, 0.445);
+    color: rgb(252, 154, 9);
+    border: none;
+    font-size: 2rem;
+    padding: 5px;
+    cursor: pointer;
+    border-radius: 45%;
+    z-index: 100;
+    margin-right: 1rem;
+    margin-left: 1rem;
+    transition: all 1000ms ease-in-out;
+}
+
+.nav-carousel:hover {
+    background-color: rgb(252, 154, 9);
+    color: rgb(49, 5, 0);
+}
+
+.prev {
+    left: 10px;
+}
+
+.next {
+    right: 10px;
+}
+
+.dots button {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: rgb(49, 5, 0);
+    border: none;
+    margin: 5px;
+    cursor: pointer;
+}
+
+.dots button.active {
+    background-color: rgb(252, 154, 9);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .carousel-slide {
+        min-width: 50%;
+    }
+}
+
+.new-wea {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    overflow: hidden;
+    border-radius: 2rem;
+}
+
+iframe {
+    width: 95%;
+}
+
+.inner-container {
+    display: flex;
+    flex-direction: row;
 }
 
 /* Carrusel de cards */
