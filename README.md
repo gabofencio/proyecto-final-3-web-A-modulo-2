@@ -1,7 +1,7 @@
 # 😼 Proyecto final Módulo 2 - Landing Page con Cartas de Hunter x Hunter 😼
 
 Repositorio de proyecto final de HTML y CSS del módulo 2 del curso de Frontend.
-La temática de la página está centrada en personajes de Hunter x Hunter, presentados a través de tarjetas interactivas que muestran información relevante de cada uno. Estas tarjetas incorporan efectos visuales, animaciones y transiciones que mejoran la experiencia del usuario.
+La temática de la página está centrada en personajes de Hunter x Hunter, presentados a través de tarjetas interactivas que muestran información relevante de cada uno. Estas tarjetas incorporan efectos visuales, animaciones y transiciones tanto en la versión desktop las cuales cambian en Mobile, la responsividad es un elemento crucial para esta unidad por lo que me empeñé en implementarla en todos y cada uno de los elementos del proyecto con la intención de mejorar la experiencia del usuario. En complemento implementé dos páginas secundarias, una con servicios donde muestro cartas de servicios, y otra página para información sobre mi.
 
 El proyecto cuenta con una estructura completamente responsiva, adaptándose a distintos tamaños de pantalla mediante el uso de media queries. Se implementó una barra de navegación adaptable que, en dispositivos móviles, se transforma en un menú tipo hamburguesa con overlay y transiciones suaves, permitiendo una navegación intuitiva.
 
@@ -12,11 +12,13 @@ Asimismo, se integró un sistema de gestión de cookies con un banner interactiv
 El proyecto también incorpora elementos adicionales como enlaces de contacto directo (WhatsApp y correo electrónico), contenido multimedia incrustado mediante iframes, y un footer estructurado que incluye navegación secundaria, redes sociales y un sistema de suscripción mediante formulario.
 El proyecto fue desarrollado maquetando con `HTML` y estilizando con `CSS` además del uso de `JavaScript` para la funcionalidad. Para el control de versiones se usó `Git` y para el alojamiento del repositorio y el despliegue de la página se usaron `GitHub` y `GitHub Pages`, respectivamente. 
 
+>nota: interactuar con todos los elementos del proyecto, ya que todos tienen su estilizado propio y funcionalidad asignada.
+
 -----------------------------------------------------------------------------
 
 ## 😼 Propósito 😼
 
-Este proyecto se llevo a cabo para desarrollar y fortalecer habilidades y conocimientos de desarrollo web haciendo uso de HTML, CSS, Git, GitHub y GitHub Pages.
+Este proyecto se llevo a cabo para desarrollar y fortalecer habilidades y conocimientos de desarrollo web haciendo uso de HTML, CSS, JavaScript, Git, GitHub y GitHub Pages.
 
 -----------------------------------------------------------------------------
 ## 😼 Clonar el repositorio 😼
