@@ -812,6 +812,7 @@ img {
         align-items: center;
         background: none !important;
         box-shadow: none !important;
+         margin: 0 auto;
     }
 
     .new-wea {
