@@ -1,8 +1,8 @@
 ## 😼 😸 Evidencias del Proyecto final para el modulo 2 😸 😼
 
-En este documento se anexan las diversas evidencias del proyecto desarrollado en el modulo 1, esto incluye:
+En este documento se anexan las diversas evidencias del proyecto desarrollado en el modulo 2, esto incluye:
 
-- *Capturas de pantalla de github pages, historial de commits y el sitio desplegado.*
+- *Capturas de pantalla de github pages, historial de commits y el sitio desplegado tanto en desktop como en mobile.*
 
 - *Enlace a la pagina desplegada.*
 
@@ -16,54 +16,48 @@ Todas las evidencias se encuentran dentro de la carpeta
 ------------------------------------------------------------------------
 
 ## 😼 💾 Vista de historial de commits 💾 😼
-![Historial de Commits]
-(.IMG/EVIDENCIAS/commits/1.png)
-(.IMG/EVIDENCIAS/commits/2.png)
-(.IMG/EVIDENCIAS/commits/3.png)
-(.IMG/EVIDENCIAS/commits/4.png)
-(.IMG/EVIDENCIAS/commits/5.png)
-(.IMG/EVIDENCIAS/commits/6.png)
-(.IMG/EVIDENCIAS/commits/7.png)
-(.IMG/EVIDENCIAS/commits/8.png)
+
+![Historial de Commits](.IMG/EVIDENCIAS/commits/1.png)
+![Historial de Commits](.IMG/EVIDENCIAS/commits/2.png)
+![Historial de Commits](.IMG/EVIDENCIAS/commits/3.png)
+![Historial de Commits](.IMG/EVIDENCIAS/commits/4.png)
+![Historial de Commits](.IMG/EVIDENCIAS/commits/5.png)
+![Historial de Commits](.IMG/EVIDENCIAS/commits/6.png)
+![Historial de Commits](.IMG/EVIDENCIAS/commits/7.png)
+![Historial de Commits](.IMG/EVIDENCIAS/commits/8.png)
 
 ## 😼 🌐 Vista de Github Pages 🌐 😼
-![Vista de github Pages](.IMG/EVIDENCIAS/github-pages-deployment.png)
+![Vista de github Pages](.IMG/EVIDENCIAS/pages.png)
 
 ## 😼 📃 Vista de pagina desplegada 📃 😼
-![Vista desktop de Home]
-(./EVIDENCIAS/deployments/desktop/h1.png)
-(./EVIDENCIAS/deployments/desktop/h2.png)
-(./EVIDENCIAS/deployments/desktop/h3.png)
-(./EVIDENCIAS/deployments/desktop/h4.png)
-(./EVIDENCIAS/deployments/desktop/h5.png)
-(./EVIDENCIAS/deployments/desktop/h6.png)
+![Vista desktop de Home](./EVIDENCIAS/deployments/desktop/h1.png)
+![Vista desktop de Home](./EVIDENCIAS/deployments/desktop/h2.png)
+![Vista desktop de Home](./EVIDENCIAS/deployments/desktop/h3.png)
+![Vista desktop de Home](./EVIDENCIAS/deployments/desktop/h4.png)
+![Vista desktop de Home](./EVIDENCIAS/deployments/desktop/h5.png)
+![Vista desktop de Home](./EVIDENCIAS/deployments/desktop/h6.png)
 
-![Vista mobile de Home]
-(./EVIDENCIAS/deployments/mobile/h1.png)
-(./EVIDENCIAS/deployments/mobile/h2.png)
-(./EVIDENCIAS/deployments/mobile/h3.png)
-(./EVIDENCIAS/deployments/mobile/h4.png)
-(./EVIDENCIAS/deployments/mobile/h5.png)
-(./EVIDENCIAS/deployments/mobile/h6.png)
-(./EVIDENCIAS/deployments/mobile/h7.png)
+![Vista mobile de Home](./EVIDENCIAS/deployments/mobile/h1.png)
+![Vista mobile de Home](./EVIDENCIAS/deployments/mobile/h2.png)
+![Vista mobile de Home](./EVIDENCIAS/deployments/mobile/h3.png)
+![Vista mobile de Home](./EVIDENCIAS/deployments/mobile/h4.png)
+![Vista mobile de Home](./EVIDENCIAS/deployments/mobile/h5.png)
+![Vista mobile de Home](./EVIDENCIAS/deployments/mobile/h6.png)
+![Vista mobile de Home](./EVIDENCIAS/deployments/mobile/h7.png)
 
-![Vista desktop de Sobre Mi]
-(./EVIDENCIAS/deployments/desktop/au1.png)
-(./EVIDENCIAS/deployments/desktop/au2.png)
+![Vista desktop de Sobre Mi](./EVIDENCIAS/deployments/desktop/au1.png)
+![Vista desktop de Sobre Mi](./EVIDENCIAS/deployments/desktop/au2.png)
 
-![Vista mobile de Sobre Mi]
-(./EVIDENCIAS/deployments/mobile/au1.png)
-(./EVIDENCIAS/deployments/mobile/au2.png)
-(./EVIDENCIAS/deployments/mobile/au3.png)
+![Vista mobile de Sobre Mi](./EVIDENCIAS/deployments/mobile/au1.png)
+![Vista mobile de Sobre Mi](./EVIDENCIAS/deployments/mobile/au2.png)
+![Vista mobile de Sobre Mi](./EVIDENCIAS/deployments/mobile/au3.png)
 
-![Vista desktop de Servicios]
-(./EVIDENCIAS/deployments/desktop/s1.png)
-(./EVIDENCIAS/deployments/desktop/s2.png)
+![Vista desktop de Servicios](./EVIDENCIAS/deployments/desktop/s1.png)
+![Vista desktop de Servicios](./EVIDENCIAS/deployments/desktop/s2.png)
 
-![Vista mobile de Servicios]
-(./EVIDENCIAS/deployments/mobile/s1.png)
-(./EVIDENCIAS/deployments/mobile/s2.png)
-(./EVIDENCIAS/deployments/mobile/s3.png)
+![Vista mobile de Servicios](./EVIDENCIAS/deployments/mobile/s1.png)
+![Vista mobile de Servicios](./EVIDENCIAS/deployments/mobile/s2.png)
+![Vista mobile de Servicios](./EVIDENCIAS/deployments/mobile/s3.png)
 
 ------------------------------------------------------------------------
 
