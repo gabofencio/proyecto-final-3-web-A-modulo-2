@@ -37,4 +37,3 @@ prevButton.addEventListener('click', () => {
     goToSlide(index);
 });
 
-updateDots();
