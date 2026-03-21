@@ -11,10 +11,11 @@
 </head>
 
 <body>
+        <video src="assets/VID/stgo.mp4" autoplay muted loop class="tiling"></video>
     <header>
         <nav class="navigation">
             <div class="container">
-                <a href="second-page.html" class="logo">GABSTELUM</a>
+                <a href="index.html" class="logo">GABSTELUM</a>
                 <button onclick="
                         let contenedor = this.parentElement.querySelector('.link-container');
                         contenedor.classList.toggle('show');
@@ -29,7 +30,7 @@
                 <div class="link-container" id="menuContainer">
                     <ul class="navLinks">
                         <li><a href="index.html" target="_blank" rel="noopener noreferrer">Pagina principal</a></li>
-                        <li><a href="about.html" target="_blank" rel="noopener noreferrer">Acerca de nosotros</a></li>
+                        <li><a href="about.html" target="_blank" rel="noopener noreferrer">Sobre Mi</a></li>
                         <li><a href="services.html" target="_blank" rel="noopener noreferrer">Servicios</a></li>
                         <li><a href="https://www.linkedin.com/in/gabriel-isaac-gastelum-miramontes-a968872b0/"
                                 target="_blank" rel="noopener noreferrer">Contacto</a>
@@ -39,9 +40,34 @@
             </div>
         </nav>
     </header>
-    <div class="blur-overlay"></div>
+    <div class="blur-overlay" id=""></div>
+    <section id="services" class="services-section">
+        <h2>Mis Servicios</h2>
+        <div class="services-cards">
+            <div class="service-card">
+                <img src="assets/IMG/inge.jpg" alt="Ingeniero Perroberto Lopez" class="service-image">
+                <h3>Diseñador Industrial</h3>
+                <p>Transformo ideas en productos reales, desde moldes para piezas automotrices hasta prototipos
+                    funcionales. Combino creatividad con precisión técnica para entregar soluciones eficientes y
+                    estéticamente atractivas, domino software de diseño industrial como: solidworks y autocad. Además tengo conocimientos en maquinaria
+                    CNC y convencional.</p>
+            </div>
+            <div class="service-card">
+                <img src="assets/IMG/tech.jpg" alt="Desarrollador Michardo Jimenez" class="service-image">
+                <h3>Desarrollo de Software</h3>
+                <p>Creo aplicaciones y sitios web funcionales y modernos. Me enfoco en soluciones que sean intuitivas,
+                    confiables y adaptables a cualquier dispositivo, usando buenas prácticas y tecnologías actuales.</p>
+            </div>
+            <div class="service-card">
+                <img src="assets/IMG/chef.jpg" alt="Raton Ramsey" class="service-image">
+                <h3>Cocina Creativa</h3>
+                <p>Me gusta preparar platillos a mis seres queridos, si estás interesado en mi cocina de alta calidad
+                    tienes que pasar por un gran filtro social y tener una networth mayor al pib de Kazajistán. Mis
+                    platillos estelares son. el cereal trix y la maruchan de queso</p>
+            </div>
 
-
+        </div>
+    </section>
 
     <footer>
         <div class="footer-master">
@@ -108,7 +134,9 @@
                 reservados.</p>
         </div>
     </footer>
-
+    <!-- misc -->
+    <a href="#inicio"> <img src="./assets/IMG/goto.png" alt="Volver al inicio" class="goto"></a>
+    </div>
 </body>
 
 </html>
