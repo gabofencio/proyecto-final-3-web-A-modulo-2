@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Servicios</title>
+    <link rel="stylesheet" href="css/secondstylesheet.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+    <link rel="icon" href="assets/IMG/logo.png" type="image/png">
+</head>
+
+<body>
+    <header>
+        <nav class="navigation">
+            <div class="container">
+                <a href="second-page.html" class="logo">GABSTELUM</a>
+                <button onclick="
+                        let contenedor = this.parentElement.querySelector('.link-container');
+                        contenedor.classList.toggle('show');
+                        document.querySelector('.blur-overlay').classList.toggle('show');
+                        contenedor.style.display='flex'
+                        " class="menu-toggle">
+                    <input type="checkbox" id="toggle-blur" class="hidden-checkbox">
+                    <span class="spanBar"></span>
+                    <span class="spanBar"></span>
+                    <span class="spanBar"></span>
+                </button>
+                <div class="link-container" id="menuContainer">
+                    <ul class="navLinks">
+                        <li><a href="index.html" target="_blank" rel="noopener noreferrer">Pagina principal</a></li>
+                        <li><a href="about.html" target="_blank" rel="noopener noreferrer">Acerca de nosotros</a></li>
+                        <li><a href="services.html" target="_blank" rel="noopener noreferrer">Servicios</a></li>
+                        <li><a href="https://www.linkedin.com/in/gabriel-isaac-gastelum-miramontes-a968872b0/"
+                                target="_blank" rel="noopener noreferrer">Contacto</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <div class="subpages-container">
+        <div class="subcontainer-1">
+            <div class="subcontainer-2">
+
+            </div>
+            <div class="subcontainer-2">
+
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-master">
+            <div class="footer-container">
+                <div class="footer-subcontainer">
+                    <p class="footer-title">Suscribete a nuestro newsletter para mantenerte enterarte de novedades.
+                    </p>
+                    <div class="input-container">
+                        <input type="email" placeholder="Correo electrónico">
+                        <button class="send-button">
+                            <img src="./assets/IMG/envelopeico.webp" alt="Enviar">
+                        </button>
+                    </div>
+                    <p class="bottom-text">Sigueme en mis redes sociales:</p>
+                    <div class="socials-container">
+                        <a href="https://instagram.com/gabstelum" target="_blank" rel="noopener noreferrer"
+                            class="socials-button">
+                            <img src="./assets/IMG/ig.png" alt="Instagram">
+                        </a><a href="https://github.com/gabofencio" target="_blank" rel="noopener noreferrer"
+                            class="socials-button">
+                            <img src="./assets/IMG/github.png" alt="GitHub">
+                        </a></a><a href="https://www.linkedin.com/in/gabriel-isaac-gastelum-miramontes-a968872b0/"
+                            target="_blank" rel="noopener noreferrer" class="socials-button">
+                            <img src="./assets/IMG/linkedin.png" alt="LinkedIn">
+                        </a>
+                        <a href="https://discord.gg/2H4VX6vQ" target="_blank" rel="noopener noreferrer"
+                            class="socials-button">
+                            <img src="./assets/IMG/discord-logo.png" alt="Discord">
+                        </a>
+                    </div>
+                </div>
+                <div class="footer-subcontainer">
+                    <ul class="navLinks">
+                        <li><a href="services.html" target="_blank" rel="noopener noreferrer">Nuestros Servicios</a>
+                        </li>
+                        <li><a href="https://gabofencio.github.io/proyecto-final-3-web-A-modulo-1/" target="_blank"
+                                rel="noopener noreferrer">Otros
+                                Proyectos</a></li>
+                        <li><a href="https://edu.devf.la/en/campus/home" target="_blank"
+                                rel="noopener noreferrer">Programa De Referidos</a></li>
+                        <li><a href="#4" target="_blank" rel="noopener noreferrer">Blog</a></li>
+                    </ul>
+                </div>
+                <div class="footer-subcontainer">
+                    <div class="contact-container">
+                        <p class="bottom-text">Mandame Un Correo.</p>
+                        <a href="mailto:gastelum.gabriel.3m@gmail.com?subject=Hola&body=Quiero%20más%20información"
+                            class="footer-data" target="_blank"
+                            rel="noopener noreferrer">gastelum.gabriel.3m@gmail.com</a>
+                    </div>
+                    <span></span>
+                    <div class="contact-container">
+                        <p class="bottom-text">Mandame Un WapSap.</p>
+                        <div class="waxap-social footer-data">
+                            <img src="./assets/IMG/whatsapp.png" alt="WhatsApp" class="" id="waxap">
+                            <a href="https://wa.me/526331179682?text=Hola%20quiero%20info" target="_blank"
+                                rel="noopener noreferrer">
+                                +52 (633) 117 9682</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <p class="copyright">© 2026 <a href="https://github.com/gabofencio" target="_blank"
+                    rel="noopener noreferrer">Gabstelum co.</a> Todos los derechos
+                reservados.</p>
+        </div>
+    </footer>
+
+</body>
+
+</html>
