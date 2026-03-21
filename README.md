@@ -1,4 +1,4 @@
-# 😼 Proyecto final Módulo 1 - Landing Page con Cartas de Hunter x Hunter 😼
+# 😼 Proyecto final Módulo 2 - Landing Page con Cartas de Hunter x Hunter 😼
 
 Repositorio de proyecto final de HTML y CSS del módulo 2 del curso de Frontend.
 La temática de la página está centrada en personajes de Hunter x Hunter, presentados a través de tarjetas interactivas que muestran información relevante de cada uno. Estas tarjetas incorporan efectos visuales, animaciones y transiciones que mejoran la experiencia del usuario.
