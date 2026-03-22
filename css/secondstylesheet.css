@@ -31,7 +31,7 @@ body {
     top: 0;
     left: 0;
 
-    width: 100vw!important;  
+    width: 100%!important;  
     height: 100vh;
     overflow: hidden;
     object-fit: cover;
@@ -1244,10 +1244,7 @@ iframe {
         font-size: 1.1rem;
         transform: translateX(-50%);
     }
-    body{
-        overflow-x: hidden;
-
-    }
+ 
 }
 
 
