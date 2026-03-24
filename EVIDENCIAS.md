@@ -27,7 +27,7 @@ Todas las evidencias se encuentran dentro de la carpeta
 ![Historial de Commits](./assets/IMG/EVIDENCIAS/commits/8.png)
 
 ## 😼 🌐 Vista de Github Pages 🌐 😼
-![Vista de github Pages](.IMG/EVIDENCIAS/pages.png)
+![Vista de github Pages](./assets/IMG/EVIDENCIAS/pages.png)
 
 ## 😼 📃 Vista de pagina desplegada 📃 😼
 ![Vista desktop de Home](./assets/IMG/EVIDENCIAS/deployments/desktop/h1.png)
@@ -64,7 +64,7 @@ Todas las evidencias se encuentran dentro de la carpeta
 ## 😼 🔗 Enlace a la pagina desplegada 🔗 😼
 
 Github Pages:
-`https://gabofencio.github.io/proyecto-final-3-web-A-modulo-1/`
+`https://github.com/gabofencio/proyecto-final-3-web-A-modulo-2`
 
 ------------------------------------------------------------------------
 
@@ -114,7 +114,7 @@ Github Pages:
 - `<a>:` *Para la creación de enlaces en las barras de navegación, botones de volver al inicio, y páginas externas de más información.*
 
 - `<iframe>:` *Para insertar videos de youtube en las photocards.*
-||
+
 - `<img>:` *Lo usé en varias instancias en las que requerí insertar imágenes con texto alternativo.*
 
 - `<nav>:` *Hice uso de esta etiqueta para la creación de mi barra de navegación*
@@ -135,13 +135,17 @@ FLEXBOX:
 - `justify-content:` *Para distribuir el contenido en el eje principal del contenedor*
 - `align-items:` *Para alinear el contenido en el eje cruzado.*
 - `flex-wrap:` *Para controlar el layout dentro de mi flexbox.*
+- `align-self:` *Para alinear elementos individuales sin afectar a los demás que se encuentran en el mismo contenedor.*
+- `gap:` *Para establecer espaciado entre elementos sin usar margenes*
+- `margin:` *Para establecer margenes externos al contenedor.*
+- `flex:` *Para hacer que los elementos se adapten al tamaño de su contenedor.*
 ------------------------------------------------------------------------
 
 ## 😼 🔥 3. ¿Cómo organizaste tus media queries y breakpoints? 🔥 😼
 
 **Respuesta:**
 
-*Organicé mis mediaquerys utilizando de breakpoint 600 px para la responsividad en dispositivos móviles*
+*Organicé mis media queries utilizando de breakpoint principal `600 px` para la responsividad en dispositivos móviles. A partir de ahí ajusté la dirección de mis contenedores para que se distribuyeran en columnas y modifiqué tamaños y distribución de elementos para evitar el overflow en las pantallas pequeñas*
 
 
 ------------------------------------------------------------------------
